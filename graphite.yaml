@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment-graphite
+  name: graphite
   labels:
-    app: nginx-graphite
+    app: graphite
 spec:
   selector:
     matchLabels:
-      app: nginx-graphite
+      app: graphite
   template:
     metadata:
       labels:
-        app: nginx-graphite
+        app: graphite
     spec:
       containers:
       - name: nginx
